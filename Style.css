@@ -112,15 +112,43 @@ body{
 
 #player{
     width:70px;
-    height:70px;
-    background:red;
-    border-radius:15px;
+    height:110px;
     position:absolute;
     left:100px;
     bottom:120px;
     transition:0.1s;
-    box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
+
+/* CORPO */
+
+#player::before{
+    content:"";
+    width:55px;
+    height:70px;
+    background:#1565c0;
+    position:absolute;
+    bottom:0;
+    left:8px;
+    border-radius:15px;
+    border:3px solid black;
+}
+
+/* CABEÇA */
+
+#player::after{
+    content:"";
+    width:50px;
+    height:50px;
+    background:#f5c79a;
+    position:absolute;
+    top:0;
+    left:10px;
+    border-radius:50%;
+    border:3px solid black;
+    box-shadow:
+    0 8px 0 #222 inset;
+}
+
 
 /* ÁRVORE */
 
