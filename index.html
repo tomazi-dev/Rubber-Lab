@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rubber Lab</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="hud">
+
+    <div id="score">Pontos: 0</div>
+
+    <div id="phase">Fase 1 - Coleta</div>
+
+    <div id="mission">
+        Missão: coletar látex
+    </div>
+
+</div>
+
+<div id="progressContainer">
+    <div id="progressBar"></div>
+</div>
+
+<div id="game">
+
+    <div id="sun"></div>
+
+    <div id="smoke"></div>
+
+    <div id="factory">
+        <div id="chimney"></div>
+    </div>
+
+    <div id="machine"></div>
+
+    <div id="waste"></div>
+
+    <div id="tree"></div>
+
+    <div id="latex"></div>
+
+    <div id="player"></div>
+
+    <div id="ground"></div>
+
+</div>
+
+<div class="controls">
+
+<button onclick="left()">⬅️</button>
+
+<button onclick="action()">⚙️</button>
+
+<button onclick="right()">➡️</button>
+
+</div>
+
+<div id="winScreen">
+
+<h1>Produção concluída!</h1>
+
+<p>
+Você transformou a borracha corretamente sem poluir o meio ambiente.
+</p>
+
+<button onclick="restartGame()">
+Jogar novamente
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
