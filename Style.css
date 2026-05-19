@@ -267,3 +267,17 @@ button{
     margin:auto;
     font-size:24px;
   }
+#player{
+    animation:walk 0.5s infinite alternate;
+}
+
+@keyframes walk{
+
+    from{
+        transform:translateY(0px);
+    }
+
+    to{
+        transform:translateY(-4px);
+    }
+}
